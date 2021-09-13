@@ -4,8 +4,7 @@ import tkinter
 
 def abrirArchivo():
     raiz= Tk()
-    archivo= filedialog.askopenfile(title="Selecciona la fuente de datos", mode='r', filetypes=
-    (("Archivos de texto (*.txt)", "*.txt")))
+    archivo= filedialog.askopenfile(title="Selecciona la fuente de datos", mode='r', filetypes= (("Archivos de texto","*.txt" ), ("Archivos de datos", "*.dat")))
     if(archivo!=None):
         nombre= archivo.name
         print(archivo.name)

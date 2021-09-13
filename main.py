@@ -1,3 +1,4 @@
+from zope.interface import declarations
 from Backend.abrirArchivo import abrirArchivo
 from tkinter import Tk
 import eel
@@ -7,7 +8,7 @@ from Backend.abrirArchivo import abrirArchivo
 
 
 ruta=''
-global datos
+global mensaje
 
 
 sys.path.append("..")
@@ -16,10 +17,13 @@ eel.init('Fonts', )
 
 @eel.expose
 def cargar():
-    global ruta, datos
+    global ruta, mensaje
     ruta= abrirArchivo()
     if(ruta!=0):
-        print('Archivo cargado')
+        f = open (ruta,'r')
+        mensaje = f.read()
+        print(mensaje)
+        f.close()
     return ruta
 
 eel.start('index.html')
