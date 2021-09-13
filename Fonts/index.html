@@ -8,27 +8,57 @@
 </head>
 
 <body>
-
-	<div class="container mb-2">
-		<br>
-			<!-- As a heading -->
+    			<!-- As a heading -->
 	<nav class="navbar navbar-light bg-dark ">
 		<div class="container-fluid " >
 			<span class="navbar-brand mb-0 h1 text-white ">Herramienta de Inteligencia Artificial</span>
 		</div>
 	</nav>
+    <div class="container mb-2">
 		<br>	
-    <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active  " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>	
-            <button onclick="cargar()" class="nav-link" id="v-pills-cagar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cargar" type="button" role="tab" aria-controls="v-pills-cargar" aria-selected="false">Carga archivo</button>
-            <button onclick="configuracion_apriori()" class="nav-link" id="v-pills-apriori-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Algoritmo Apriori</button>
-            <button onclick="distancias()" class="nav-link" id="v-pills-distancias-tab" data-bs-toggle="pill" data-bs-target="#v-pills-distancias" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Métricas de similitud</button>
-            <button onclick="configuracion_cluster()" class="nav-link" id="v-pills-clustering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clustering" type="button" role="tab" aria-controls="v-pills-clustering" aria-selected="false">Clustering</button>
-        </div>
-    </div>
+		<div class="d-flex align-items-start">
+			<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<button class="nav-link active  " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>	
+				<button onclick="cargar()" class="nav-link" id="v-pills-cagar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cargar" type="button" role="tab" aria-controls="v-pills-cargar" aria-selected="false">Carga archivo</button>
+				<button onclick="configuracion_apriori()" class="nav-link" id="v-pills-apriori-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Algoritmo Apriori</button>
+				<button onclick="distancias()" class="nav-link" id="v-pills-distancias-tab" data-bs-toggle="pill" data-bs-target="#v-pills-distancias" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Métricas de similitud</button>
+				<button onclick="configuracion_cluster()" class="nav-link" id="v-pills-clustering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clustering" type="button" role="tab" aria-controls="v-pills-clustering" aria-selected="false">Clustering</button>
+
+			</div>
+			<div class="container">
+				<div class="tab-content " id="v-pills-tabContent">
+					<div class="tab-pane fade show active container" align="center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">			
+						<h1> UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO <h1>
+							<h2> Facultad de Ingeniería <h2>
+							<h3 aling= "center"> Procesamiento y Análisis Inteligente de Textos </h3>	
+							<br><br>
+							<hr>
+							<h3>
+								<h2> Clasificador de Lenguas <h2>
+							<hr>
+							<br>
+							<h4 aling="left">Castillo Reyes Alberto</h4>
+							
+					</div>
+					<div class="tab-pane fade " id="v-pills-cargar" role="tabpanel" aria-labelledby="v-pills-cargar-tab" >			
+						<div class="cargar archivo"> </div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<div class="conf_apriori"> </div>
+						<div class="apartado1"></div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-distancias" role="tabpanel" aria-labelledby="v-pills-distancias-tab">
+						<div class="distancias"> </div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-clustering" role="tabpanel" aria-labelledby="v-pills-clustering-tab">
+						<div class="clustering-conf"> </div>
+						<div class="jerarquico"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
 	<script src=eel.js> </script>	
-	<script src='./cargar.js'> </script>
+	<script src='./Backend/cargar.js'> </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
