@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Clasificador de Lenguas </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div class="container mb-2">
+		<br>
+			<!-- As a heading -->
+	<nav class="navbar navbar-light bg-dark ">
+		<div class="container-fluid " >
+			<span class="navbar-brand mb-0 h1 text-white ">Herramienta de Inteligencia Artificial</span>
+		</div>
+	</nav>
+		<br>	
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active  " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>	
+            <button onclick="cargar()" class="nav-link" id="v-pills-cagar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cargar" type="button" role="tab" aria-controls="v-pills-cargar" aria-selected="false">Carga archivo</button>
+            <button onclick="configuracion_apriori()" class="nav-link" id="v-pills-apriori-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Algoritmo Apriori</button>
+            <button onclick="distancias()" class="nav-link" id="v-pills-distancias-tab" data-bs-toggle="pill" data-bs-target="#v-pills-distancias" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Métricas de similitud</button>
+            <button onclick="configuracion_cluster()" class="nav-link" id="v-pills-clustering-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clustering" type="button" role="tab" aria-controls="v-pills-clustering" aria-selected="false">Clustering</button>
+        </div>
+    </div>
+	<script src=eel.js> </script>	
+	<script src='./cargar.js'> </script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
